@@ -4458,14 +4458,6 @@ public final class Settings {
          /** @hide */
         private static final Validator VIBRATE_ON_CALLWAITING_VALIDATOR = BOOLEAN_VALIDATOR;
 
-<<<<<<< HEAD
-=======
-         /**
-         * @hide
-         */
-        public static final String NOTIFICATION_GUTS_KILL_APP_BUTTON = "notification_guts_kill_app_button";
-
->>>>>>> 04002c4dc07... Allow to suppress notifications sound/vibration if screen is On [1/2]
         /**
          * Wheter to play notification sound and vibration if screen is on
          * @hide
@@ -4479,6 +4471,15 @@ public final class Settings {
          * @hide
          */
         public static final String ROAMING_INDICATOR_ICON = "roaming_indicator_icon";
+
+        /**
+         * Whether to mute annoying notifications
+         * @hide
+         */
+        public static final String MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD = "mute_annoying_notifications_threshold";
+
+         /** @hide */
+        private static final Validator MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD_VALIDATOR = ANY_INTEGER_VALIDATOR;
 
         /**
          * Whether to display 4G icon instead LTE
@@ -5064,13 +5065,11 @@ public final class Settings {
             VIBRATE_ON_CONNECT,
             VIBRATE_ON_DISCONNECT,
             VIBRATE_ON_CALLWAITING,
-<<<<<<< HEAD
             NOTIFICATION_SOUND_VIB_SCREEN_ON,
             MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
             ONE_HAND_MODE_ENABLED,
-=======
-            NOTIFICATION_SOUND_VIB_SCREEN_ON
->>>>>>> 04002c4dc07... Allow to suppress notifications sound/vibration if screen is On [1/2]
+            NOTIFICATION_SOUND_VIB_SCREEN_ON,
+            MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD
         };
 
         /**
@@ -5236,11 +5235,9 @@ public final class Settings {
             PRIVATE_SETTINGS.add(VIBRATE_ON_CONNECT);
             PRIVATE_SETTINGS.add(VIBRATE_ON_DISCONNECT);
             PRIVATE_SETTINGS.add(VIBRATE_ON_CALLWAITING);
-<<<<<<< HEAD
             PRIVATE_SETTINGS.add(ONE_HAND_MODE_ENABLED);
-=======
             PRIVATE_SETTINGS.add(NOTIFICATION_SOUND_VIB_SCREEN_ON);
->>>>>>> 04002c4dc07... Allow to suppress notifications sound/vibration if screen is On [1/2]
+            PRIVATE_SETTINGS.add(MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD);
         }
 
 
@@ -5367,13 +5364,10 @@ public final class Settings {
             VALIDATORS.put(VIBRATE_ON_CONNECT, VIBRATE_ON_CONNECT_VALIDATOR);
             VALIDATORS.put(VIBRATE_ON_DISCONNECT, VIBRATE_ON_DISCONNECT_VALIDATOR);
             VALIDATORS.put(VIBRATE_ON_CALLWAITING, VIBRATE_ON_CALLWAITING_VALIDATOR);
-<<<<<<< HEAD
             VALIDATORS.put(ONE_HAND_MODE_ENABLED, ONE_HAND_MODE_ENABLED_VALIDATOR);
-        }
-=======
             VALIDATORS.put(NOTIFICATION_SOUND_VIB_SCREEN_ON, NOTIFICATION_SOUND_VIB_SCREEN_ON_VALIDATOR);
+            VALIDATORS.put(MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD_VALIDATOR);
        }
->>>>>>> 04002c4dc07... Allow to suppress notifications sound/vibration if screen is On [1/2]
 
         /**
          * These entries are considered common between the personal and the managed profile,
