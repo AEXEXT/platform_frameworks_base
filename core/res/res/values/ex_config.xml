@@ -151,4 +151,10 @@
   	 this value will apply on Launcher3 quickstep view and also the normal recents -->
     <dimen name="recents_task_view_rounded_corners_radius">2.0dip</dimen>
 
+    <!-- minimal way before long swipe will get accepted - in dp -->
+    <integer name="nav_gesture_swipe_min_length">60</integer>
+    <!-- time in ms that needs to pass before trigger the action -->
+    <integer name="nav_gesture_swipe_timout">250</integer>
+    <!-- signification move threshold - if stays below will trigger action -->
+    <integer name="nav_gesture_move_threshold">4</integer>
 </resources>
