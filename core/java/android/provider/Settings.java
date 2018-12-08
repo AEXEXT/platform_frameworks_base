@@ -4560,6 +4560,12 @@ public final class Settings {
          * @hide
          */
         public static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
+        
+        /**
+         * Whether the Home button works during call
+         * @hide
+         */
+        public static final String ALLOW_INCALL_HOME = "allow_incall_home";        
 
         /**
          * Whether to show network traffic indicator in statusbar
