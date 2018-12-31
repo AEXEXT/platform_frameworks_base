@@ -194,11 +194,20 @@
          this value will apply on Launcher3 quickstep view and also the normal recents -->
     <java-symbol type="dimen" name="recents_task_view_rounded_corners_radius" />
 
-  <java-symbol type="integer" name="nav_gesture_swipe_min_length" />
-  <java-symbol type="integer" name="nav_gesture_swipe_timout" />
-  <java-symbol type="integer" name="nav_gesture_move_threshold" />
+    <java-symbol type="integer" name="nav_gesture_swipe_min_length" />
+    <java-symbol type="integer" name="nav_gesture_swipe_timout" />
+    <java-symbol type="integer" name="nav_gesture_move_threshold" />
 
-  <!-- Icon packs -->
-  <java-symbol type="drawable" name="adaptive_icon_drawable_wrapper" />
+    <!-- Icon packs -->
+    <java-symbol type="drawable" name="adaptive_icon_drawable_wrapper" />
 
+    <!-- Custom Analog clock -->
+    <java-symbol type="drawable" name="custom_clock_dial" />
+    <java-symbol type="drawable" name="custom_clock_dial_ambient" />
+    <java-symbol type="drawable" name="custom_clock_hand_hour" />
+    <java-symbol type="drawable" name="custom_clock_hand_minute" />
+    <java-symbol type="color" name="analog_clock_border_color" />
+    <java-symbol type="color" name="analog_clock_face_color" />
+    <java-symbol type="color" name="analog_clock_hand_hour_color" />
+    <java-symbol type="color" name="analog_clock_hand_minute_color" />
 </resources>
