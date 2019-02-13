@@ -4965,14 +4965,6 @@ public final class Settings {
                 BOOLEAN_VALIDATOR;
 
         /**
-<<<<<<< HEAD
-=======
-         * Whether to show or hide the edit icon
-         * @hide
-         */
-        public static final String QS_EDIT_TOGGLE = "qs_edit_toggle";
-
-        /**
          * enable or disable single handed mode
          * @hide
          */
